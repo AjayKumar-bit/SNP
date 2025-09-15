@@ -1,0 +1,292 @@
+{
+  "context": {
+    "domain": "ONDC:RET11",
+    "action": "on_select",
+    "core_version": "1.2.0",
+    "bap_id": "buyerNP.com",
+    "bap_uri": "https://buyerNP.com/ondc",
+    "bpp_id": "sellerNP.com",
+    "bpp_uri": "https://sellerNP.com/ondc",
+    "transaction_id": "T2",
+    "message_id": "M2",
+    "city": "std:080",
+    "country": "IND",
+    "timestamp": "2023-06-03T08:30:30.000Z"
+  },
+  "message": {
+    "order": {
+      "provider": {
+        "id": "P1"
+      },
+      "items": [
+        {
+          "id": "I1",
+          "fulfillment_id": "F1[617]"
+        }
+      ],
+      "fulfillments": [
+        {
+          "id": "F1",
+          "type": "Delivery",
+          "@ondc/org/provider_name": "LSP or Provider Name",
+          "tracking": false,
+          "@ondc/org/category": "Immediate Delivery",
+          "@ondc/org/TAT": "PT60M[618]",
+          "state": {
+            "descriptor": {
+              "code": "Serviceable"
+            }
+          }
+        },
+        {
+          "id": "F2",
+          "type": "Self-Pickup",
+          "@ondc/org/provider_name": "",
+          "tracking": false,
+          "@ondc/org/category": "Takeaway[619]",
+          "@ondc/org/TAT": "PT15M[620]",
+          "state": {
+            "descriptor": {
+              "code": "Serviceable[621]"
+            }
+          }
+        },
+        {
+          "id": "F3",
+          "type": "Buyer-Delivery",
+          "@ondc/org/provider_name": "",
+          "tracking": false,
+          "@ondc/org/category": "",
+          "@ondc/org/TAT": "PT15M[622]",
+          "state": {
+            "descriptor": {
+              "code": "Serviceable[623]"
+            }
+          },
+          "tags": [
+            {
+              "code": "weight",
+              "list": [
+                {
+                  "code": "unit",
+                  "value": "kilogram[624]"
+                },
+                {
+                  "code": "value",
+                  "value": "1"
+                }
+              ]
+            },
+            {
+              "code": "length",
+              "list": [
+                {
+                  "code": "unit",
+                  "value": "centimeter[625]"
+                },
+                {
+                  "code": "value",
+                  "value": "1"
+                }
+              ]
+            },
+            {
+              "code": "breadth",
+              "list": [
+                {
+                  "code": "unit",
+                  "value": "centimeter"
+                },
+                {
+                  "code": "value",
+                  "value": "1"
+                }
+              ]
+            },
+            {
+              "code": "height",
+              "list": [
+                {
+                  "code": "unit",
+                  "value": "centimeter"
+                },
+                {
+                  "code": "value",
+                  "value": "1"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "quote[626]": {
+        "price": {
+          "currency": "INR",
+          "value": "1394.00"
+        },
+        "breakup": [
+          {
+            "@ondc/org/item_id": "I1",
+            "@ondc/org/item_quantity": {
+              "count": 2
+            },
+            "title": "Veg Pizza",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "1200.00"
+            },
+            "item": {
+              "quantity": {
+                "available": {
+                  "count": "99"
+                },
+                "maximum": {
+                  "count": "99"
+                }
+              },
+              "price": {
+                "currency": "INR",
+                "value": "600.00"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "F1",
+            "title": "Delivery charges",
+            "@ondc/org/title_type": "delivery",
+            "price": {
+              "currency": "INR",
+              "value": "50.00"
+            }
+          },
+          {
+            "@ondc/org/item_id": "F1",
+            "title": "Tax",
+            "@ondc/org/title_type": "tax[627]",
+            "price": {
+              "currency": "INR",
+              "value": "9.00"
+            },
+            "item": {
+              "tags": [
+                {
+                  "code": "quote",
+                  "list": [
+                    {
+                      "code": "type",
+                      "value": "fulfillment"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "@ondc/org/item_id": "F1",
+            "title": "Packing charges",
+            "@ondc/org/title_type": "packing",
+            "price": {
+              "currency": "INR",
+              "value": "25.00"
+            }
+          },
+          {
+            "@ondc/org/item_id": "F2",
+            "title": "Delivery charges",
+            "@ondc/org/title_type": "delivery",
+            "price": {
+              "currency": "INR",
+              "value": "0.00"
+            }
+          },
+          {
+            "@ondc/org/item_id": "F2",
+            "title": "Packing charges",
+            "@ondc/org/title_type": "packing",
+            "price": {
+              "currency": "INR",
+              "value": "25.00"
+            }
+          },
+          {
+            "@ondc/org/item_id": "F3",
+            "title": "Delivery charges",
+            "@ondc/org/title_type": "delivery",
+            "price": {
+              "currency": "INR",
+              "value": "0.00"
+            },
+            "item": {
+              "tags": [
+                {
+                  "code": "quote",
+                  "list": [
+                    {
+                      "code": "type",
+                      "value": "fulfillment"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "@ondc/org/item_id": "F3",
+            "title": "Packing charges",
+            "@ondc/org/title_type": "packing",
+            "price": {
+              "currency": "INR",
+              "value": "25.00"
+            },
+            "item": {
+              "tags": [
+                {
+                  "code": "quote",
+                  "list": [
+                    {
+                      "code": "type",
+                      "value": "fulfillment"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "@ondc/org/item_id": "F3",
+            "title": "Convenience fee",
+            "@ondc/org/title_type": "misc",
+            "price": {
+              "currency": "INR",
+              "value": "0.00"
+            },
+            "item": {
+              "tags": [
+                {
+                  "code": "quote",
+                  "list": [
+                    {
+                      "code": "type",
+                      "value": "fulfillment"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "@ondc/org/item_id": "I1",
+            "title": "Tax",
+            "@ondc/org/title_type": "tax",
+            "price": {
+              "currency": "INR",
+              "value": "60.00"
+            }
+          }
+        ],
+        "ttl": "PT30M"
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "context": {
+    "action": "rating",
+    "core_version": "1.2.5",
+		"bap_id": "buyerNP.com",
+    "bap_uri": "https://buyerNP.com/ondc",
+    "bpp_id": "sellerNP.com",
+    "bpp_uri": "https://sellerNP.com/ondc",
+    "transaction_id": "T2",
+    "message_id": "M2",
+    "city": "std:080",
+    "country": "IND",
+    "timestamp": "2023-06-03T08:30:30.000Z"
+  },
+ "message": {
+    "order_id": "O1",
+    "ratings": [
+      {
+        "rating_category": "PROVIDER",
+        "id": "18275-ONDC-1",
+        "value": "4"
+      },
+      {
+        "rating_category": "ITEM",
+        "id": "18275-ONDC-1-10001",
+        "value": "5"
+      },
+      {
+        "rating_category": "ITEM",
+        "id": "18275-ONDC-1-10002",
+        "value": "3"
+      }
+    ]
+  }
+}

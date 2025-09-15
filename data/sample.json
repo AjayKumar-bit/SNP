@@ -1,0 +1,1196 @@
+{
+  "id": "67ad9d55183299d0d4b8510b",
+  "bpp/fulfillments": [
+    {
+      "id": "F1",
+      "type": "Delivery",
+      "contact": {
+        "phone": "8087076666",
+        "email": "contact@bharatgo.com"
+      }
+    }
+  ],
+  "bpp/descriptor": {
+    "name": "BharatGo",
+    "symbol": "https://www.bharatgo.com/_next/static/media/Bharatgowhite6.818339d1.png",
+    "images": [
+      "https://www.bharatgo.com/_next/static/media/Bharatgowhite6.818339d1.png"
+    ],
+    "short_desc": "Seller Marketplace",
+    "long_desc": "Seller Marketplace",
+    "tags": [
+      {
+        "code": "bpp_terms",
+        "list": [
+          {
+            "code": "np_type",
+            "value": "MSN"
+          }
+        ]
+      }
+    ]
+  },
+  "bpp/providers": [
+    {
+      "id": "299",
+      "time": {
+        "timestamp": "2025-02-13T07:20:53.727Z",
+        "label": "enable"
+      },
+      "fulfillments": [
+        {
+          "id": "F1",
+          "type": "Delivery",
+          "contact": {
+            "phone": "5162121212",
+            "email": "dev.pushkraj@gmail.com"
+          }
+        }
+      ],
+      "descriptor": {
+        "name": "Starship",
+        "long_desc": {
+          "blocks": [
+            {
+              "key": "evha8",
+              "text": "Shop directly from our online store! Explore our latest offerings and place your order hassle-free. We appreciate your support! #ShopLocal #EasyOrdering #OrderDirect",
+              "type": "unstyled",
+              "depth": 0,
+              "inlineStyleRanges": [],
+              "entityRanges": [],
+              "data": {}
+            }
+          ],
+          "entityMap": {}
+        },
+        "short_desc": "Shop directly from our online store! Explore our latest offerings and place your order hassle-free. We appreciate your support! #ShopLocal #EasyOrdering #OrderDirect",
+        "images": [
+          "https://dev-bharatgo.s3.ap-south-1.amazonaws.com/bharatgo-data/DEVELOPMENT/vendor/299/files/business/logo/DALL__E_2025-01-28_23.30.20_-_A_vibrant_and_colorful_logo_for_a_grocery_store_named_StarShip._The_logo_features_the_name_StarShip_in_bold__modern__and_playful_typography__surro-20250128T180404-0e8604ce.png"
+        ],
+        "symbol": "https://dev-bharatgo.s3.ap-south-1.amazonaws.com/bharatgo-data/DEVELOPMENT/vendor/299/files/business/logo/DALL__E_2025-01-28_23.30.20_-_A_vibrant_and_colorful_logo_for_a_grocery_store_named_StarShip._The_logo_features_the_name_StarShip_in_bold__modern__and_playful_typography__surro-20250128T180404-0e8604ce.png"
+      },
+      "ttl": "PT24H",
+      "locations": [
+        {
+          "id": "299",
+          "time": {
+            "label": "enable",
+            "timestamp": "2025-02-13T06:50:53.727Z",
+            "days": "1,2,3,4,5,6,7",
+            "schedule": { "holidays": [] },
+            "range": { "start": "0900", "end": "1900" }
+          },
+          "gps": "28.430277,77.058254",
+          "address": {
+            "locality": "Baker St, Huda Colony, Sector 46",
+            "street": "Baker St, Huda Colony, Sector 46",
+            "city": "Gurugram",
+            "area_code": "122018",
+            "state": "HR"
+          },
+          "circle": {
+            "gps": "28.430277,77.058254",
+            "radius": { "unit": "km", "value": "5" }
+          }
+        }
+      ],
+      "categories": [
+        {
+          "id": "BG-000000126",
+          "descriptor": { "name": "Bakery, Cakes & Dairy" },
+          "tags": []
+        },
+        {
+          "id": "BG-000000075",
+          "descriptor": { "name": "Energy and Soft Drinks" },
+          "tags": []
+        }
+      ],
+      "items": [
+        {
+          "id": "831",
+          "time": {
+            "label": "enable",
+            "timestamp": "2025-02-13T07:20:53.727Z"
+          },
+          "descriptor": {
+            "name": "Rose Shahi Bun",
+            "short_desc": {
+              "blocks": [
+                {
+                  "key": "fkjpf",
+                  "text": "A soft milk bun infused with rose syrup and stuffed with a creamy shahi tukda-inspired filling. It's lightly glazed for a shiny, delicate finish. ",
+                  "type": "unstyled",
+                  "depth": 0,
+                  "inlineStyleRanges": [],
+                  "entityRanges": [],
+                  "data": {}
+                }
+              ],
+              "entityMap": {}
+            },
+            "long_desc": {
+              "blocks": [
+                {
+                  "key": "fkjpf",
+                  "text": "A soft milk bun infused with rose syrup and stuffed with a creamy shahi tukda-inspired filling. It's lightly glazed for a shiny, delicate finish. ",
+                  "type": "unstyled",
+                  "depth": 0,
+                  "inlineStyleRanges": [],
+                  "entityRanges": [],
+                  "data": {}
+                }
+              ],
+              "entityMap": {}
+            },
+            "images": [],
+            "symbol": "",
+            "code": "1:1000000000831"
+          },
+          "quantity": {
+            "unitized": { "measure": { "unit": "unit", "value": "1" } },
+            "available": { "count": "99" },
+            "maximum": { "count": "99" }
+          },
+          "price": {
+            "currency": "INR",
+            "value": "75.00",
+            "maximum_value": "80.00"
+          },
+          "category_id": "Bakery, Cakes & Dairy",
+          "fulfillment_id": "F1",
+          "location_id": "299",
+          "recommended": true,
+          "related": true,
+          "@ondc/org/returnable": false,
+          "@ondc/org/cancellable": false,
+          "@ondc/org/seller_pickup_return": false,
+          "@ondc/org/available_on_cod": false,
+          "@ondc/org/return_window": "PT1H",
+          "@ondc/org/time_to_ship": "PT45M",
+          "@ondc/org/contact_details_consumer_care": "Pushkraj,dev.pushkraj@gmail.com,5162121212",
+          "@ondc/org/statutory_reqs_packaged_commodities": {
+            "manufacturer_or_packer_name": "Starship",
+            "manufacturer_or_packer_address": "Baker St, Huda Colony, Sector 46",
+            "common_or_generic_name_of_commodity": "Rose Shahi Bun",
+            "month_year_of_manufacture_packing_import": "01/2025"
+          },
+          "@ondc/org/statutory_reqs_prepackaged_food": {
+            "nutritional_info": "NA",
+            "additives_info": "NA",
+            "brand_owner_FSSAI_license_no": "NA",
+            "other_FSSAI_license_no": "NA",
+            "importer_FSSAI_license_no": "NA"
+          },
+          "tags": [
+            {
+              "code": "origin",
+              "list": [{ "code": "country", "value": "IND" }]
+            },
+            {
+              "code": "type",
+              "list": [{ "code": "type", "value": "item" }]
+            }
+          ]
+        },
+        {
+          "id": "829",
+          "time": {
+            "label": "enable",
+            "timestamp": "2025-02-13T07:20:53.727Z"
+          },
+          "descriptor": {
+            "name": "Malai Puff",
+            "short_desc": {
+              "blocks": [
+                {
+                  "key": "6dgoe",
+                  "text": "A flaky puff pastry filled with a rich malai (cream) mixture flavored with cardamom and topped with crushed pistachios. ",
+                  "type": "unstyled",
+                  "depth": 0,
+                  "inlineStyleRanges": [],
+                  "entityRanges": [],
+                  "data": {}
+                }
+              ],
+              "entityMap": {}
+            },
+            "long_desc": {
+              "blocks": [
+                {
+                  "key": "6dgoe",
+                  "text": "A flaky puff pastry filled with a rich malai (cream) mixture flavored with cardamom and topped with crushed pistachios. ",
+                  "type": "unstyled",
+                  "depth": 0,
+                  "inlineStyleRanges": [],
+                  "entityRanges": [],
+                  "data": {}
+                }
+              ],
+              "entityMap": {}
+            },
+            "images": [
+              "https://dev-bharatgo.s3.amazonaws.com/admin/1/vendor_type/1/Thu%20Sep%2021%202023%2011%3A34%3A09%20GMT%2B0530%20%28India%20Standard%20Time%29_c29f8b4a8345a4b00960fc611182b168.png"
+            ],
+            "symbol": "https://dev-bharatgo.s3.amazonaws.com/admin/1/vendor_type/1/Thu%20Sep%2021%202023%2011%3A34%3A09%20GMT%2B0530%20%28India%20Standard%20Time%29_c29f8b4a8345a4b00960fc611182b168.png",
+            "code": "1:1000000000829"
+          },
+          "quantity": {
+            "unitized": { "measure": { "unit": "unit", "value": "85" } },
+            "available": { "count": "99" },
+            "maximum": { "count": "99" }
+          },
+          "price": {
+            "currency": "INR",
+            "value": "55.00",
+            "maximum_value": "60.00"
+          },
+          "category_id": "Bakery, Cakes & Dairy",
+          "fulfillment_id": "F1",
+          "location_id": "299",
+          "recommended": true,
+          "related": true,
+          "@ondc/org/returnable": false,
+          "@ondc/org/cancellable": false,
+          "@ondc/org/seller_pickup_return": false,
+          "@ondc/org/available_on_cod": false,
+          "@ondc/org/return_window": "PT1H",
+          "@ondc/org/time_to_ship": "PT45M",
+          "@ondc/org/contact_details_consumer_care": "Pushkraj,dev.pushkraj@gmail.com,5162121212",
+          "@ondc/org/statutory_reqs_packaged_commodities": {
+            "manufacturer_or_packer_name": "Starship",
+            "manufacturer_or_packer_address": "Baker St, Huda Colony, Sector 46",
+            "common_or_generic_name_of_commodity": "Malai Puff",
+            "month_year_of_manufacture_packing_import": "01/2025"
+          },
+          "@ondc/org/statutory_reqs_prepackaged_food": {
+            "nutritional_info": "NA",
+            "additives_info": "NA",
+            "brand_owner_FSSAI_license_no": "NA",
+            "other_FSSAI_license_no": "NA",
+            "importer_FSSAI_license_no": "NA"
+          },
+          "tags": [
+            {
+              "code": "origin",
+              "list": [{ "code": "country", "value": "IND" }]
+            },
+            {
+              "code": "type",
+              "list": [{ "code": "type", "value": "item" }]
+            }
+          ]
+        },
+        {
+          "id": "843",
+          "time": {
+            "label": "enable",
+            "timestamp": "2025-02-13T07:20:53.727Z"
+          },
+          "descriptor": {
+            "name": "Tulsi Shikanji",
+            "short_desc": {
+              "blocks": [
+                {
+                  "key": "edj0e",
+                  "text": "A refreshing twist on the classic lemonade, infused with fresh tulsi (holy basil) leaves, black salt, and a hint of jaggery. ",
+                  "type": "unstyled",
+                  "depth": 0,
+                  "inlineStyleRanges": [],
+                  "entityRanges": [],
+                  "data": {}
+                }
+              ],
+              "entityMap": {}
+            },
+            "long_desc": {
+              "blocks": [
+                {
+                  "key": "edj0e",
+                  "text": "A refreshing twist on the classic lemonade, infused with fresh tulsi (holy basil) leaves, black salt, and a hint of jaggery. ",
+                  "type": "unstyled",
+                  "depth": 0,
+                  "inlineStyleRanges": [],
+                  "entityRanges": [],
+                  "data": {}
+                }
+              ],
+              "entityMap": {}
+            },
+            "images": [
+              "https://dev-bharatgo.s3.ap-south-1.amazonaws.com/ADMIN/Global_Products/Development/Global_Products/Fri%20Feb%2016%202024%2019%3A37%3A51%20GMT%2B0530%20%28India%20Standard%20Time%29_2024116-48694-180rktg.sznu.jpg.jpg"
+            ],
+            "symbol": "https://dev-bharatgo.s3.ap-south-1.amazonaws.com/ADMIN/Global_Products/Development/Global_Products/Fri%20Feb%2016%202024%2019%3A37%3A51%20GMT%2B0530%20%28India%20Standard%20Time%29_2024116-48694-180rktg.sznu.jpg.jpg",
+            "code": "1:1000000000843"
+          },
+          "quantity": {
+            "unitized": { "measure": { "unit": "unit", "value": "100" } },
+            "available": { "count": "99" },
+            "maximum": { "count": "99" }
+          },
+          "price": {
+            "currency": "INR",
+            "value": "50.00",
+            "maximum_value": "50.00"
+          },
+          "category_id": "Energy and Soft Drinks",
+          "fulfillment_id": "F1",
+          "location_id": "299",
+          "recommended": true,
+          "related": true,
+          "@ondc/org/returnable": false,
+          "@ondc/org/cancellable": false,
+          "@ondc/org/seller_pickup_return": false,
+          "@ondc/org/available_on_cod": false,
+          "@ondc/org/return_window": "PT1H",
+          "@ondc/org/time_to_ship": "PT45M",
+          "@ondc/org/contact_details_consumer_care": "Pushkraj,dev.pushkraj@gmail.com,5162121212",
+          "@ondc/org/statutory_reqs_packaged_commodities": {
+            "manufacturer_or_packer_name": "Starship",
+            "manufacturer_or_packer_address": "Baker St, Huda Colony, Sector 46",
+            "common_or_generic_name_of_commodity": "Tulsi Shikanji",
+            "month_year_of_manufacture_packing_import": "01/2025"
+          },
+          "@ondc/org/statutory_reqs_prepackaged_food": {
+            "nutritional_info": "NA",
+            "additives_info": "NA",
+            "brand_owner_FSSAI_license_no": "NA",
+            "other_FSSAI_license_no": "NA",
+            "importer_FSSAI_license_no": "NA"
+          },
+          "tags": [
+            {
+              "code": "origin",
+              "list": [{ "code": "country", "value": "IND" }]
+            },
+            {
+              "code": "type",
+              "list": [{ "code": "type", "value": "item" }]
+            }
+          ]
+        },
+        {
+          "id": "845",
+          "time": {
+            "label": "enable",
+            "timestamp": "2025-02-13T07:20:53.727Z"
+          },
+          "descriptor": {
+            "name": "Kokum Chaas",
+            "short_desc": {
+              "blocks": [
+                {
+                  "key": "2hd58",
+                  "text": "A tangy and refreshing buttermilk drink infused with kokum, roasted cumin powder, and mint leaves. ",
+                  "type": "unstyled",
+                  "depth": 0,
+                  "inlineStyleRanges": [],
+                  "entityRanges": [],
+                  "data": {}
+                }
+              ],
+              "entityMap": {}
+            },
+            "long_desc": {
+              "blocks": [
+                {
+                  "key": "2hd58",
+                  "text": "A tangy and refreshing buttermilk drink infused with kokum, roasted cumin powder, and mint leaves. ",
+                  "type": "unstyled",
+                  "depth": 0,
+                  "inlineStyleRanges": [],
+                  "entityRanges": [],
+                  "data": {}
+                }
+              ],
+              "entityMap": {}
+            },
+            "images": [
+              "https://dev-bharatgo.s3.ap-south-1.amazonaws.com/ADMIN/Global_Products/Development/Global_Products/Fri%20Feb%2016%202024%2019%3A38%3A07%20GMT%2B0530%20%28India%20Standard%20Time%29_2024116-48694-9vpba6.dae4w.jpg.jpg"
+            ],
+            "symbol": "https://dev-bharatgo.s3.ap-south-1.amazonaws.com/ADMIN/Global_Products/Development/Global_Products/Fri%20Feb%2016%202024%2019%3A38%3A07%20GMT%2B0530%20%28India%20Standard%20Time%29_2024116-48694-9vpba6.dae4w.jpg.jpg",
+            "code": "1:1000000000845"
+          },
+          "quantity": {
+            "unitized": { "measure": { "unit": "unit", "value": "1" } },
+            "available": { "count": "99" },
+            "maximum": { "count": "99" }
+          },
+          "price": {
+            "currency": "INR",
+            "value": "60.00",
+            "maximum_value": "60.00"
+          },
+          "category_id": "Energy and Soft Drinks",
+          "fulfillment_id": "F1",
+          "location_id": "299",
+          "recommended": true,
+          "related": true,
+          "@ondc/org/returnable": false,
+          "@ondc/org/cancellable": false,
+          "@ondc/org/seller_pickup_return": false,
+          "@ondc/org/available_on_cod": false,
+          "@ondc/org/return_window": "PT1H",
+          "@ondc/org/time_to_ship": "PT45M",
+          "@ondc/org/contact_details_consumer_care": "Pushkraj,dev.pushkraj@gmail.com,5162121212",
+          "@ondc/org/statutory_reqs_packaged_commodities": {
+            "manufacturer_or_packer_name": "Starship",
+            "manufacturer_or_packer_address": "Baker St, Huda Colony, Sector 46",
+            "common_or_generic_name_of_commodity": "Kokum Chaas",
+            "month_year_of_manufacture_packing_import": "01/2025"
+          },
+          "@ondc/org/statutory_reqs_prepackaged_food": {
+            "nutritional_info": "NA",
+            "additives_info": "NA",
+            "brand_owner_FSSAI_license_no": "NA",
+            "other_FSSAI_license_no": "NA",
+            "importer_FSSAI_license_no": "NA"
+          },
+          "tags": [
+            {
+              "code": "origin",
+              "list": [{ "code": "country", "value": "IND" }]
+            },
+            {
+              "code": "type",
+              "list": [{ "code": "type", "value": "item" }]
+            }
+          ]
+        },
+        {
+          "id": "844",
+          "time": {
+            "label": "enable",
+            "timestamp": "2025-02-13T07:20:53.727Z"
+          },
+          "descriptor": {
+            "name": "Kesar Badam Thandai",
+            "short_desc": {
+              "blocks": [
+                {
+                  "key": "ak3tt",
+                  "text": "A chilled drink made with milk, saffron, almond paste, cardamom, and a hint of fennel for a rich, creamy experience. ",
+                  "type": "unstyled",
+                  "depth": 0,
+                  "inlineStyleRanges": [],
+                  "entityRanges": [],
+                  "data": {}
+                }
+              ],
+              "entityMap": {}
+            },
+            "long_desc": {
+              "blocks": [
+                {
+                  "key": "ak3tt",
+                  "text": "A chilled drink made with milk, saffron, almond paste, cardamom, and a hint of fennel for a rich, creamy experience. ",
+                  "type": "unstyled",
+                  "depth": 0,
+                  "inlineStyleRanges": [],
+                  "entityRanges": [],
+                  "data": {}
+                }
+              ],
+              "entityMap": {}
+            },
+            "images": [
+              "https://dev-bharatgo.s3.ap-south-1.amazonaws.com/ADMIN/Global_Products/Development/Global_Products/Fri%20Feb%2016%202024%2019%3A37%3A51%20GMT%2B0530%20%28India%20Standard%20Time%29_2024116-48694-1d47s11.giph.jpg.jpg"
+            ],
+            "symbol": "https://dev-bharatgo.s3.ap-south-1.amazonaws.com/ADMIN/Global_Products/Development/Global_Products/Fri%20Feb%2016%202024%2019%3A38%3A07%20GMT%2B0530%20%28India%20Standard%20Time%29_2024116-48694-9vpba6.dae4w.jpg.jpg",
+            "code": "1:1000000000844"
+          },
+          "quantity": {
+            "unitized": { "measure": { "unit": "unit", "value": "500" } },
+            "available": { "count": "99" },
+            "maximum": { "count": "99" }
+          },
+          "price": {
+            "currency": "INR",
+            "value": "70.00",
+            "maximum_value": "70.00"
+          },
+          "category_id": "Energy and Soft Drinks",
+          "fulfillment_id": "F1",
+          "location_id": "299",
+          "recommended": true,
+          "related": true,
+          "@ondc/org/returnable": false,
+          "@ondc/org/cancellable": false,
+          "@ondc/org/seller_pickup_return": false,
+          "@ondc/org/available_on_cod": false,
+          "@ondc/org/return_window": "PT1H",
+          "@ondc/org/time_to_ship": "PT45M",
+          "@ondc/org/contact_details_consumer_care": "Pushkraj,dev.pushkraj@gmail.com,5162121212",
+          "@ondc/org/statutory_reqs_packaged_commodities": {
+            "manufacturer_or_packer_name": "Starship",
+            "manufacturer_or_packer_address": "Baker St, Huda Colony, Sector 46",
+            "common_or_generic_name_of_commodity": "Kesar Badam Thandai",
+            "month_year_of_manufacture_packing_import": "01/2025"
+          },
+          "@ondc/org/statutory_reqs_prepackaged_food": {
+            "nutritional_info": "NA",
+            "additives_info": "NA",
+            "brand_owner_FSSAI_license_no": "NA",
+            "other_FSSAI_license_no": "NA",
+            "importer_FSSAI_license_no": "NA"
+          },
+          "tags": [
+            {
+              "code": "origin",
+              "list": [{ "code": "country", "value": "IND" }]
+            },
+            {
+              "code": "type",
+              "list": [{ "code": "type", "value": "item" }]
+            }
+          ]
+        },
+        {
+          "id": "846",
+          "time": {
+            "label": "enable",
+            "timestamp": "2025-02-13T07:20:53.727Z"
+          },
+          "descriptor": {
+            "name": "Rose Coconut Cooler",
+            "short_desc": "{\"blocks\":[{\"key\":\"dqvf0\",\"text\":\"Tender coconut water blended with rose syrup, ice, and a dash of lime for a floral, tropical drink. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+            "long_desc": "{\"blocks\":[{\"key\":\"dqvf0\",\"text\":\"Tender coconut water blended with rose syrup, ice, and a dash of lime for a floral, tropical drink. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+            "images": [
+              "https://dev-bharatgo.s3.ap-south-1.amazonaws.com/ADMIN/Global_Products/Development/Global_Products/Fri%20Feb%2016%202024%2019%3A38%3A07%20GMT%2B0530%20%28India%20Standard%20Time%29_2024116-48694-1awfl5d.qhjz.jpg.jpg"
+            ],
+            "symbol": "https://dev-bharatgo.s3.ap-south-1.amazonaws.com/ADMIN/Global_Products/Development/Global_Products/Fri%20Feb%2016%202024%2019%3A38%3A07%20GMT%2B0530%20%28India%20Standard%20Time%29_2024116-48694-1awfl5d.qhjz.jpg.jpg",
+            "code": "1:1000000000846"
+          },
+          "quantity": {
+            "unitized": { "measure": { "unit": "unit", "value": "500" } },
+            "available": { "count": "99" },
+            "maximum": { "count": "99" }
+          },
+          "price": {
+            "currency": "INR",
+            "value": "70.00",
+            "maximum_value": "70.00"
+          },
+          "category_id": "Energy and Soft Drinks",
+          "fulfillment_id": "F1",
+          "location_id": "299",
+          "recommended": true,
+          "related": true,
+          "@ondc/org/returnable": false,
+          "@ondc/org/cancellable": false,
+          "@ondc/org/seller_pickup_return": false,
+          "@ondc/org/available_on_cod": false,
+          "@ondc/org/return_window": "PT1H",
+          "@ondc/org/time_to_ship": "PT45M",
+          "@ondc/org/contact_details_consumer_care": "Pushkraj,dev.pushkraj@gmail.com,5162121212",
+          "@ondc/org/statutory_reqs_packaged_commodities": {
+            "manufacturer_or_packer_name": "Starship",
+            "manufacturer_or_packer_address": "Baker St, Huda Colony, Sector 46",
+            "common_or_generic_name_of_commodity": "Rose Coconut Cooler",
+            "month_year_of_manufacture_packing_import": "01/2025"
+          },
+          "@ondc/org/statutory_reqs_prepackaged_food": {
+            "nutritional_info": "NA",
+            "additives_info": "NA",
+            "brand_owner_FSSAI_license_no": "NA",
+            "other_FSSAI_license_no": "NA",
+            "importer_FSSAI_license_no": "NA"
+          },
+          "tags": [
+            {
+              "code": "origin",
+              "list": [{ "code": "country", "value": "IND" }]
+            },
+            {
+              "code": "type",
+              "list": [{ "code": "type", "value": "item" }]
+            }
+          ]
+        },
+        {
+          "id": "832",
+          "time": {
+            "label": "enable",
+            "timestamp": "2025-02-13T07:20:53.727Z"
+          },
+          "descriptor": {
+            "name": "Gur Nankhatai",
+            "short_desc": "{\"blocks\":[{\"key\":\"8thfu\",\"text\":\"A twist on the classic nankhatai, this cookie is made with jaggery (gur) instead of sugar and a hint of saffron for an earthy, sweet flavor. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+            "long_desc": "{\"blocks\":[{\"key\":\"8thfu\",\"text\":\"A twist on the classic nankhatai, this cookie is made with jaggery (gur) instead of sugar and a hint of saffron for an earthy, sweet flavor. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+            "images": [],
+            "symbol": "",
+            "code": "1:1000000000832"
+          },
+          "quantity": {
+            "unitized": { "measure": { "unit": "unit", "value": "1" } },
+            "available": { "count": "99" },
+            "maximum": { "count": "99" }
+          },
+          "price": {
+            "currency": "INR",
+            "value": "50.00",
+            "maximum_value": "50.00"
+          },
+          "category_id": "Bakery, Cakes & Dairy",
+          "fulfillment_id": "F1",
+          "location_id": "299",
+          "recommended": true,
+          "related": true,
+          "@ondc/org/returnable": false,
+          "@ondc/org/cancellable": false,
+          "@ondc/org/seller_pickup_return": false,
+          "@ondc/org/available_on_cod": false,
+          "@ondc/org/return_window": "PT1H",
+          "@ondc/org/time_to_ship": "PT45M",
+          "@ondc/org/contact_details_consumer_care": "Pushkraj,dev.pushkraj@gmail.com,5162121212",
+          "@ondc/org/statutory_reqs_packaged_commodities": {
+            "manufacturer_or_packer_name": "Starship",
+            "manufacturer_or_packer_address": "Baker St, Huda Colony, Sector 46",
+            "common_or_generic_name_of_commodity": "Gur Nankhatai",
+            "month_year_of_manufacture_packing_import": "01/2025"
+          },
+          "@ondc/org/statutory_reqs_prepackaged_food": {
+            "nutritional_info": "NA",
+            "additives_info": "NA",
+            "brand_owner_FSSAI_license_no": "NA",
+            "other_FSSAI_license_no": "NA",
+            "importer_FSSAI_license_no": "NA"
+          },
+          "tags": [
+            {
+              "code": "origin",
+              "list": [{ "code": "country", "value": "IND" }]
+            },
+            {
+              "code": "type",
+              "list": [{ "code": "type", "value": "item" }]
+            }
+          ]
+        }
+      ],
+      "tags": [
+        {
+          "code": "serviceability",
+          "list": [
+            { "code": "location", "value": "299" },
+            { "code": "category", "value": "Bakery, Cakes & Dairy" },
+            { "code": "type", "value": "10" },
+            { "code": "val", "value": "5" },
+            { "code": "unit", "value": "km" }
+          ]
+        },
+        {
+          "code": "timing",
+          "list": [
+            { "code": "type", "value": "Delivery" },
+            { "code": "location", "value": "299" },
+            { "code": "day_from", "value": "1" },
+            { "code": "day_to", "value": "7" },
+            { "code": "time_from", "value": "0000" },
+            { "code": "time_to", "value": "2359" }
+          ]
+        },
+        {
+          "code": "timing",
+          "list": [
+            { "code": "type", "value": "Order" },
+            { "code": "location", "value": "299" },
+            { "code": "day_from", "value": "1" },
+            { "code": "day_to", "value": "7" },
+            { "code": "time_from", "value": "0000" },
+            { "code": "time_to", "value": "2359" }
+          ]
+        },
+        {
+          "code": "timing",
+          "list": [
+            { "code": "type", "value": "Delivery" },
+            { "code": "location", "value": "299" },
+            { "code": "day_from", "value": "1" },
+            { "code": "day_to", "value": "7" },
+            { "code": "time_from", "value": "0000" },
+            { "code": "time_to", "value": "2355" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "time": {
+        "timestamp": "2025-02-13T07:20:53.727Z",
+        "label": "enable"
+      },
+      "fulfillments": [
+        {
+          "id": "F1",
+          "type": "Delivery",
+          "contact": {
+            "phone": "9890262427",
+            "email": "dev.pushkraj@gmail.com"
+          }
+        }
+      ],
+      "descriptor": {
+        "name": "Rocket",
+        "long_desc": "{\"blocks\":[{\"key\":\"alrra\",\"text\":\"Shop directly from our online store! Explore our latest offerings and place your order hassle-free. We appreciate your support! #ShopLocal #EasyOrdering #OrderDirect\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+        "short_desc": "{\"blocks\":[{\"key\":\"alrra\",\"text\":\"Shop directly from our online store! Explore our latest offerings and place your order hassle-free. We appreciate your support! #ShopLocal #EasyOrdering #OrderDirect\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+        "images": [
+          "https://dev-bharatgo.s3.ap-south-1.amazonaws.com/bharatgo-data/DEVELOPMENT/vendor/6/files/business/logo/Scenic_Mountains_-_Minimalist_Macbook_Wallpaper-20241125T113504-26450aad.jpg"
+        ],
+        "symbol": "https://dev-bharatgo.s3.ap-south-1.amazonaws.com/bharatgo-data/DEVELOPMENT/vendor/6/files/business/logo/Scenic_Mountains_-_Minimalist_Macbook_Wallpaper-20241125T113504-26450aad.jpg"
+      },
+      "ttl": "PT24H",
+      "locations": [
+        {
+          "id": "6",
+          "time": {
+            "label": "enable",
+            "timestamp": "2025-02-13T06:50:53.727Z",
+            "days": "1,2,3,4,5,6,7",
+            "schedule": { "holidays": [] },
+            "range": { "start": "0900", "end": "1900" }
+          },
+          "gps": "18.513956,73.806604",
+          "address": {
+            "locality": "EEPSIT, Balwantpuram, 110/1/A, Off Paud Road, Kothrud, Shivtirthanagar, Matoba Nagar, Kothrud, Pune, Maharashtra 411038, India",
+            "street": "EEPSIT, Balwantpuram, 110/1/A, Off Paud Road, Kothrud, Shivtirthanagar, Matoba Nagar, Kothrud, Pune, Maharashtra 411038, India",
+            "city": "Pune",
+            "area_code": "411038",
+            "state": "MH"
+          },
+          "circle": {
+            "gps": "18.513956,73.806604",
+            "radius": { "unit": "km", "value": "5" }
+          }
+        }
+      ],
+      "categories": [
+        {
+          "id": "BG-000000050",
+          "descriptor": { "name": "Snacks, Dry Fruits, Nuts" },
+          "tags": []
+        },
+        {
+          "id": "BG-000000013",
+          "descriptor": { "name": "Oil & Ghee" },
+          "tags": []
+        }
+      ],
+      "items": [
+        {
+          "id": "287",
+          "time": {
+            "label": "enable",
+            "timestamp": "2025-02-13T07:20:53.727Z"
+          },
+          "descriptor": {
+            "name": "Premium Seedless Dates",
+            "short_desc": "{\"blocks\":[{\"key\":\"28uuu\",\"text\":\"Sweet and chewy seedless dates packed with natural energy and nutrients. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+            "long_desc": "{\"blocks\":[{\"key\":\"28uuu\",\"text\":\"Sweet and chewy seedless dates packed with natural energy and nutrients. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+            "images": [
+              "https://dev-bharatgo.s3.amazonaws.com/admin/1/vendor_type/1/Thu%20Sep%2021%202023%2011%3A34%3A09%20GMT%2B0530%20%28India%20Standard%20Time%29_c29f8b4a8345a4b00960fc611182b168.png"
+            ],
+            "symbol": "https://dev-bharatgo.s3.amazonaws.com/admin/1/vendor_type/1/Thu%20Sep%2021%202023%2011%3A34%3A09%20GMT%2B0530%20%28India%20Standard%20Time%29_c29f8b4a8345a4b00960fc611182b168.png",
+            "code": "1:1000000000287"
+          },
+          "quantity": {
+            "unitized": { "measure": { "unit": "unit", "value": "1" } },
+            "available": { "count": "99" },
+            "maximum": { "count": "99" }
+          },
+          "price": {
+            "currency": "INR",
+            "value": "350.00",
+            "maximum_value": "350.00"
+          },
+          "category_id": "Snacks, Dry Fruits, Nuts",
+          "fulfillment_id": "F1",
+          "location_id": "6",
+          "recommended": true,
+          "related": true,
+          "@ondc/org/returnable": false,
+          "@ondc/org/cancellable": false,
+          "@ondc/org/seller_pickup_return": false,
+          "@ondc/org/available_on_cod": false,
+          "@ondc/org/return_window": "PT1H",
+          "@ondc/org/time_to_ship": "PT45M",
+          "@ondc/org/contact_details_consumer_care": "Pushkraj,dev.pushkraj@gmail.com,9890262427",
+          "@ondc/org/statutory_reqs_packaged_commodities": {
+            "manufacturer_or_packer_name": "Rocket",
+            "manufacturer_or_packer_address": "EEPSIT, Balwantpuram, 110/1/A, Off Paud Road, Kothrud, Shivtirthanagar, Matoba Nagar, Kothrud, Pune, Maharashtra 411038, India",
+            "common_or_generic_name_of_commodity": "Premium Seedless Dates",
+            "month_year_of_manufacture_packing_import": "01/2025"
+          },
+          "@ondc/org/statutory_reqs_prepackaged_food": {
+            "nutritional_info": "NA",
+            "additives_info": "NA",
+            "brand_owner_FSSAI_license_no": "NA",
+            "other_FSSAI_license_no": "NA",
+            "importer_FSSAI_license_no": "NA"
+          },
+          "tags": [
+            {
+              "code": "origin",
+              "list": [{ "code": "country", "value": "IND" }]
+            },
+            {
+              "code": "type",
+              "list": [{ "code": "type", "value": "item" }]
+            }
+          ]
+        },
+        {
+          "id": "286",
+          "time": {
+            "label": "enable",
+            "timestamp": "2025-02-13T07:20:53.727Z"
+          },
+          "descriptor": {
+            "name": "Masala Makhana (Fox Nuts)",
+            "short_desc": "{\"blocks\":[{\"key\":\"tq6h\",\"text\":\"Roasted makhana seasoned with tangy spices and a hint of black pepper. A healthy, low-calorie snack.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"19c1l\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+            "long_desc": "{\"blocks\":[{\"key\":\"tq6h\",\"text\":\"Roasted makhana seasoned with tangy spices and a hint of black pepper. A healthy, low-calorie snack.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"19c1l\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+            "images": [
+              "https://dev-bharatgo.s3.ap-south-1.amazonaws.com/ADMIN/Global_Products/Development/Global_Products/Fri%20Feb%2016%202024%2019%3A26%3A10%20GMT%2B0530%20%28India%20Standard%20Time%29_2024116-46689-e8wvu5.e7aul.jpg.jpg"
+            ],
+            "symbol": "https://dev-bharatgo.s3.ap-south-1.amazonaws.com/ADMIN/Global_Products/Development/Global_Products/Fri%20Feb%2016%202024%2019%3A26%3A10%20GMT%2B0530%20%28India%20Standard%20Time%29_2024116-46689-e8wvu5.e7aul.jpg.jpg",
+            "code": "1:1000000000286"
+          },
+          "quantity": {
+            "unitized": { "measure": { "unit": "unit", "value": "1" } },
+            "available": { "count": "99" },
+            "maximum": { "count": "99" }
+          },
+          "price": {
+            "currency": "INR",
+            "value": "150.00",
+            "maximum_value": "150.00"
+          },
+          "category_id": "Snacks, Dry Fruits, Nuts",
+          "fulfillment_id": "F1",
+          "location_id": "6",
+          "recommended": true,
+          "related": true,
+          "@ondc/org/returnable": false,
+          "@ondc/org/cancellable": false,
+          "@ondc/org/seller_pickup_return": false,
+          "@ondc/org/available_on_cod": false,
+          "@ondc/org/return_window": "PT1H",
+          "@ondc/org/time_to_ship": "PT45M",
+          "@ondc/org/contact_details_consumer_care": "Pushkraj,dev.pushkraj@gmail.com,9890262427",
+          "@ondc/org/statutory_reqs_packaged_commodities": {
+            "manufacturer_or_packer_name": "Rocket",
+            "manufacturer_or_packer_address": "EEPSIT, Balwantpuram, 110/1/A, Off Paud Road, Kothrud, Shivtirthanagar, Matoba Nagar, Kothrud, Pune, Maharashtra 411038, India",
+            "common_or_generic_name_of_commodity": "Masala Makhana (Fox Nuts)",
+            "month_year_of_manufacture_packing_import": "01/2025"
+          },
+          "@ondc/org/statutory_reqs_prepackaged_food": {
+            "nutritional_info": "NA",
+            "additives_info": "NA",
+            "brand_owner_FSSAI_license_no": "NA",
+            "other_FSSAI_license_no": "NA",
+            "importer_FSSAI_license_no": "NA"
+          },
+          "tags": [
+            {
+              "code": "origin",
+              "list": [{ "code": "country", "value": "IND" }]
+            },
+            {
+              "code": "type",
+              "list": [{ "code": "type", "value": "item" }]
+            }
+          ]
+        },
+        {
+          "id": "285",
+          "time": {
+            "label": "enable",
+            "timestamp": "2025-02-13T07:20:53.727Z"
+          },
+          "descriptor": {
+            "name": "Roasted Almonds",
+            "short_desc": "{\"blocks\":[{\"key\":\"68osu\",\"text\":\"Crunchy almonds roasted to perfection, with a light salt coating. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+            "long_desc": "{\"blocks\":[{\"key\":\"68osu\",\"text\":\"Crunchy almonds roasted to perfection, with a light salt coating. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+            "images": [
+              "https://dev-bharatgo.s3.ap-south-1.amazonaws.com/ADMIN/Global_Products/Development/Global_Products/Fri%20Feb%2016%202024%2019%3A26%3A07%20GMT%2B0530%20%28India%20Standard%20Time%29_2024116-46689-e5hbb3.w2caj.jpg.jpg"
+            ],
+            "symbol": "https://dev-bharatgo.s3.ap-south-1.amazonaws.com/ADMIN/Global_Products/Development/Global_Products/Fri%20Feb%2016%202024%2019%3A26%3A07%20GMT%2B0530%20%28India%20Standard%20Time%29_2024116-46689-e5hbb3.w2caj.jpg.jpg",
+            "code": "1:1000000000285"
+          },
+          "quantity": {
+            "unitized": { "measure": { "unit": "unit", "value": "1" } },
+            "available": { "count": "99" },
+            "maximum": { "count": "99" }
+          },
+          "price": {
+            "currency": "INR",
+            "value": "100.00",
+            "maximum_value": "120.00"
+          },
+          "category_id": "Snacks, Dry Fruits, Nuts",
+          "fulfillment_id": "F1",
+          "location_id": "6",
+          "recommended": true,
+          "related": true,
+          "@ondc/org/returnable": false,
+          "@ondc/org/cancellable": false,
+          "@ondc/org/seller_pickup_return": false,
+          "@ondc/org/available_on_cod": false,
+          "@ondc/org/return_window": "PT1H",
+          "@ondc/org/time_to_ship": "PT45M",
+          "@ondc/org/contact_details_consumer_care": "Pushkraj,dev.pushkraj@gmail.com,9890262427",
+          "@ondc/org/statutory_reqs_packaged_commodities": {
+            "manufacturer_or_packer_name": "Rocket",
+            "manufacturer_or_packer_address": "EEPSIT, Balwantpuram, 110/1/A, Off Paud Road, Kothrud, Shivtirthanagar, Matoba Nagar, Kothrud, Pune, Maharashtra 411038, India",
+            "common_or_generic_name_of_commodity": "Roasted Almonds",
+            "month_year_of_manufacture_packing_import": "01/2025"
+          },
+          "@ondc/org/statutory_reqs_prepackaged_food": {
+            "nutritional_info": "NA",
+            "additives_info": "NA",
+            "brand_owner_FSSAI_license_no": "NA",
+            "other_FSSAI_license_no": "NA",
+            "importer_FSSAI_license_no": "NA"
+          },
+          "tags": [
+            {
+              "code": "origin",
+              "list": [{ "code": "country", "value": "IND" }]
+            },
+            {
+              "code": "type",
+              "list": [{ "code": "type", "value": "item" }]
+            }
+          ]
+        },
+        {
+          "id": "848",
+          "time": {
+            "label": "enable",
+            "timestamp": "2025-02-13T07:20:53.727Z"
+          },
+          "descriptor": {
+            "name": "Mustard Oil (Kachi Ghani)",
+            "short_desc": "{\"blocks\":[{\"key\":\"eandb\",\"text\":\"Traditionally extracted mustard oil, known for its sharp flavor and antibacterial properties. Great for pickling and cooking. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+            "long_desc": "{\"blocks\":[{\"key\":\"eandb\",\"text\":\"Traditionally extracted mustard oil, known for its sharp flavor and antibacterial properties. Great for pickling and cooking. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+            "images": [],
+            "symbol": "",
+            "code": "1:1000000000848"
+          },
+          "quantity": {
+            "unitized": { "measure": { "unit": "unit", "value": "1" } },
+            "available": { "count": "99" },
+            "maximum": { "count": "99" }
+          },
+          "price": {
+            "currency": "INR",
+            "value": "220.00",
+            "maximum_value": "220.00"
+          },
+          "category_id": "Oil & Ghee",
+          "fulfillment_id": "F1",
+          "location_id": "6",
+          "recommended": true,
+          "related": true,
+          "@ondc/org/returnable": false,
+          "@ondc/org/cancellable": false,
+          "@ondc/org/seller_pickup_return": false,
+          "@ondc/org/available_on_cod": false,
+          "@ondc/org/return_window": "PT1H",
+          "@ondc/org/time_to_ship": "PT45M",
+          "@ondc/org/contact_details_consumer_care": "Pushkraj,dev.pushkraj@gmail.com,9890262427",
+          "@ondc/org/statutory_reqs_packaged_commodities": {
+            "manufacturer_or_packer_name": "Rocket",
+            "manufacturer_or_packer_address": "EEPSIT, Balwantpuram, 110/1/A, Off Paud Road, Kothrud, Shivtirthanagar, Matoba Nagar, Kothrud, Pune, Maharashtra 411038, India",
+            "common_or_generic_name_of_commodity": "Mustard Oil (Kachi Ghani)",
+            "month_year_of_manufacture_packing_import": "01/2025"
+          },
+          "@ondc/org/statutory_reqs_prepackaged_food": {
+            "nutritional_info": "NA",
+            "additives_info": "NA",
+            "brand_owner_FSSAI_license_no": "NA",
+            "other_FSSAI_license_no": "NA",
+            "importer_FSSAI_license_no": "NA"
+          },
+          "tags": [
+            {
+              "code": "origin",
+              "list": [{ "code": "country", "value": "IND" }]
+            },
+            {
+              "code": "type",
+              "list": [{ "code": "type", "value": "item" }]
+            }
+          ]
+        },
+        {
+          "id": "847",
+          "time": {
+            "label": "enable",
+            "timestamp": "2025-02-13T07:20:53.727Z"
+          },
+          "descriptor": {
+            "name": "Cold-Pressed Coconut Oil",
+            "short_desc": "{\"blocks\":[{\"key\":\"677v8\",\"text\":\" Pure and unrefined coconut oil extracted using traditional cold-pressed methods. Ideal for cooking, skincare, and haircare. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+            "long_desc": "{\"blocks\":[{\"key\":\"677v8\",\"text\":\" Pure and unrefined coconut oil extracted using traditional cold-pressed methods. Ideal for cooking, skincare, and haircare. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+            "images": [
+              "https://dev-bharatgo.s3.ap-south-1.amazonaws.com/ADMIN/Global_Products/Development/Global_Products/Fri%20Feb%2016%202024%2019%3A25%3A42%20GMT%2B0530%20%28India%20Standard%20Time%29_2024116-46689-1duxytz.fzcr.jpg.jpg"
+            ],
+            "symbol": "https://dev-bharatgo.s3.ap-south-1.amazonaws.com/ADMIN/Global_Products/Development/Global_Products/Fri%20Feb%2016%202024%2019%3A25%3A42%20GMT%2B0530%20%28India%20Standard%20Time%29_2024116-46689-1duxytz.fzcr.jpg.jpg",
+            "code": "1:1000000000847"
+          },
+          "quantity": {
+            "unitized": { "measure": { "unit": "unit", "value": "200" } },
+            "available": { "count": "99" },
+            "maximum": { "count": "99" }
+          },
+          "price": {
+            "currency": "INR",
+            "value": "299.00",
+            "maximum_value": "350.00"
+          },
+          "category_id": "Oil & Ghee",
+          "fulfillment_id": "F1",
+          "location_id": "6",
+          "recommended": true,
+          "related": true,
+          "@ondc/org/returnable": false,
+          "@ondc/org/cancellable": false,
+          "@ondc/org/seller_pickup_return": false,
+          "@ondc/org/available_on_cod": false,
+          "@ondc/org/return_window": "PT1H",
+          "@ondc/org/time_to_ship": "PT45M",
+          "@ondc/org/contact_details_consumer_care": "Pushkraj,dev.pushkraj@gmail.com,9890262427",
+          "@ondc/org/statutory_reqs_packaged_commodities": {
+            "manufacturer_or_packer_name": "Rocket",
+            "manufacturer_or_packer_address": "EEPSIT, Balwantpuram, 110/1/A, Off Paud Road, Kothrud, Shivtirthanagar, Matoba Nagar, Kothrud, Pune, Maharashtra 411038, India",
+            "common_or_generic_name_of_commodity": "Cold-Pressed Coconut Oil",
+            "month_year_of_manufacture_packing_import": "01/2025"
+          },
+          "@ondc/org/statutory_reqs_prepackaged_food": {
+            "nutritional_info": "NA",
+            "additives_info": "NA",
+            "brand_owner_FSSAI_license_no": "NA",
+            "other_FSSAI_license_no": "NA",
+            "importer_FSSAI_license_no": "NA"
+          },
+          "tags": [
+            {
+              "code": "origin",
+              "list": [{ "code": "country", "value": "IND" }]
+            },
+            {
+              "code": "type",
+              "list": [{ "code": "type", "value": "item" }]
+            }
+          ]
+        },
+        {
+          "id": "849",
+          "time": {
+            "label": "enable",
+            "timestamp": "2025-02-13T07:20:53.727Z"
+          },
+          "descriptor": {
+            "name": "Vanaspati Ghee",
+            "short_desc": "{\"blocks\":[{\"key\":\"9dv0n\",\"text\":\"Affordable ghee alternative for cooking and frying, commonly used in Indian households. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+            "long_desc": "{\"blocks\":[{\"key\":\"9dv0n\",\"text\":\"Affordable ghee alternative for cooking and frying, commonly used in Indian households. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+            "images": [],
+            "symbol": "",
+            "code": "1:1000000000849"
+          },
+          "quantity": {
+            "unitized": { "measure": { "unit": "unit", "value": "1" } },
+            "available": { "count": "99" },
+            "maximum": { "count": "99" }
+          },
+          "price": {
+            "currency": "INR",
+            "value": "150.00",
+            "maximum_value": "150.00"
+          },
+          "category_id": "Oil & Ghee",
+          "fulfillment_id": "F1",
+          "location_id": "6",
+          "recommended": true,
+          "related": true,
+          "@ondc/org/returnable": false,
+          "@ondc/org/cancellable": false,
+          "@ondc/org/seller_pickup_return": false,
+          "@ondc/org/available_on_cod": false,
+          "@ondc/org/return_window": "PT1H",
+          "@ondc/org/time_to_ship": "PT45M",
+          "@ondc/org/contact_details_consumer_care": "Pushkraj,dev.pushkraj@gmail.com,9890262427",
+          "@ondc/org/statutory_reqs_packaged_commodities": {
+            "manufacturer_or_packer_name": "Rocket",
+            "manufacturer_or_packer_address": "EEPSIT, Balwantpuram, 110/1/A, Off Paud Road, Kothrud, Shivtirthanagar, Matoba Nagar, Kothrud, Pune, Maharashtra 411038, India",
+            "common_or_generic_name_of_commodity": "Vanaspati Ghee",
+            "month_year_of_manufacture_packing_import": "01/2025"
+          },
+          "@ondc/org/statutory_reqs_prepackaged_food": {
+            "nutritional_info": "NA",
+            "additives_info": "NA",
+            "brand_owner_FSSAI_license_no": "NA",
+            "other_FSSAI_license_no": "NA",
+            "importer_FSSAI_license_no": "NA"
+          },
+          "tags": [
+            {
+              "code": "origin",
+              "list": [{ "code": "country", "value": "IND" }]
+            },
+            {
+              "code": "type",
+              "list": [{ "code": "type", "value": "item" }]
+            }
+          ]
+        }
+      ],
+      "tags": [
+        {
+          "code": "serviceability",
+          "list": [
+            { "code": "location", "value": "6" },
+            { "code": "category", "value": "Snacks, Dry Fruits, Nuts" },
+            { "code": "type", "value": "10" },
+            { "code": "val", "value": "5" },
+            { "code": "unit", "value": "km" }
+          ]
+        },
+        {
+          "code": "timing",
+          "list": [
+            { "code": "type", "value": "Delivery" },
+            { "code": "location", "value": "6" },
+            { "code": "day_from", "value": "1" },
+            { "code": "day_to", "value": "7" },
+            { "code": "time_from", "value": "0000" },
+            { "code": "time_to", "value": "2359" }
+          ]
+        },
+        {
+          "code": "timing",
+          "list": [
+            { "code": "type", "value": "Order" },
+            { "code": "location", "value": "6" },
+            { "code": "day_from", "value": "1" },
+            { "code": "day_to", "value": "7" },
+            { "code": "time_from", "value": "0000" },
+            { "code": "time_to", "value": "2359" }
+          ]
+        },
+        {
+          "code": "timing",
+          "list": [
+            { "code": "type", "value": "Delivery" },
+            { "code": "location", "value": "6" },
+            { "code": "day_from", "value": "1" },
+            { "code": "day_to", "value": "7" },
+            { "code": "time_from", "value": "0000" },
+            { "code": "time_to", "value": "2355" }
+          ]
+        }
+      ]
+    }
+  ]
+}

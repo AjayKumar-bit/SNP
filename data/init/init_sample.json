@@ -1,0 +1,67 @@
+{
+  "context": {
+    "domain": "nic2004:60232",
+    "action": "init",
+    "country": "IND",
+    "city": "std:080",
+    "core_version": "1.2.0",
+    "bap_id": "buyer-app.nkr.com",
+    "bap_uri": "https://buyer-app.nkr.com/ondc",
+    "transaction_id": "txn-123456",
+    "message_id": "msg-78910",
+    "timestamp": "2025-04-09T12:30:00Z",
+    "bpp_id": "seller-app.dmart.com",
+    "bpp_uri": "https://seller-app.dmart.com/ondc"
+  },
+  "message": {
+    "order": {
+      "provider": {
+        "id": "dmart-retail-560001"
+      },
+      "items": [
+        {
+          "id": "milk-toned-1L",
+          "quantity": {
+            "count": 2
+          }
+        }
+      ],
+      "billing": {
+        "name": "John Doe",
+        "phone": "9876543210",
+        "email": "john@example.com",
+        "address": {
+          "street": "123 MG Road",
+          "city": "Bangalore",
+          "state": "KA",
+          "country": "IND",
+          "area_code": "560001"
+        }
+      },
+      "fulfillments": [
+        {
+          "type": "Delivery",
+          "end": {
+            "contact": {
+              "phone": "9876543210",
+              "email": "john@example.com"
+            },
+            "location": {
+              "gps": "12.9716,77.5946",
+              "address": {
+                "area_code": "560001"
+              }
+            }
+          }
+        }
+      ],
+      "payment": {
+        "type": "ON-ORDER",
+        "collected_by": "BAP",
+        "status": "NOT-PAID",
+        "tl_method": "http/get",
+        "type": "ON-ORDER"
+      }
+    }
+  }
+}

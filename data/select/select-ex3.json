@@ -1,0 +1,143 @@
+{
+  "id": "pramaan_provider_1_id_16vmqe_1_0",
+  "type": "item",
+  "language": "en",
+  "item_details": {
+    "item_id": "id_16vmqe_1_0",
+    "descriptor": {
+      "name": "Creatine",
+      "short_desc": "",
+      "long_desc": "",
+      "images": [
+        "https://ondc.org/assets/theme/images/ondc_registered_logo.svg?v=399788fda7"
+      ]
+    },
+    "category_id": "Nutrition and Fitness Supplements",
+    "location_id": "SSL1",
+    "provider_id": "pramaan_provider_1",
+    "time": {
+      "label": "enable",
+      "timestamp": "2025-04-09T07:30:00.000Z"
+    },
+    "price": {
+      "value": 2800,
+      "currency": "INR"
+    },
+    "tags": [
+      {
+        "code": "origin",
+        "list": [
+          {
+            "code": "country",
+            "value": "IND"
+          }
+        ]
+      },
+      {
+        "code": "attribute",
+        "list": [
+          {
+            "code": "brand",
+            "value": "MYFITNESS"
+          },
+          {
+            "code": "prescription_required",
+            "value": "no"
+          }
+        ]
+      },
+      {
+        "code": "image",
+        "list": [
+          {
+            "code": "type",
+            "value": "back_image"
+          },
+          {
+            "code": "url",
+            "value": "https://ondc.org/assets/theme/images/ondc_registered_logo.svg?v=399788fda7"
+          }
+        ]
+      }
+    ],
+    "@ondc/org/time_to_ship": "PT15M"
+  },
+  "provider_details": {
+    "id": "pramaan_provider_1",
+    "descriptor": {
+      "name": "Pramaan Store 1",
+      "short_desc": ""
+    },
+    "contact_details": {
+      "phone": "9876543210",
+      "email": "ss_seller_1@ss.com"
+    },
+    "time": {
+      "label": "enable",
+      "timestamp": "2024-10-11T00:00:00.000Z"
+    }
+  },
+  "location_details": {
+    "id": "SSL1",
+    "time": {
+      "label": "enable",
+      "timestamp": "2024-10-11T00:00:00.000Z",
+      "days": "1,2,3,4,5,6,7",
+      "schedule": {
+        "holidays": []
+      },
+      "range": {
+        "start": "1000",
+        "end": "2100"
+      }
+    },
+    "gps": "28.527300,77.182100",
+    "address": {
+      "locality": "N. Caldwell",
+      "street": "633 Stagtrail Rd",
+      "city": "New Delhi",
+      "state": "New Delhi",
+      "area_code": "110030"
+    },
+    "circle": {
+      "gps": "28.527300,77.182100",
+      "radius": {
+        "unit": "km",
+        "value": "500"
+      }
+    }
+  },
+  "fulfillment_details": [
+    {
+      "id": "F0",
+      "type": "Delivery",
+      "contact": {
+        "phone": "9876543210",
+        "email": "ss_seller_1@ss.com"
+      }
+    },
+    {
+      "id": "F1",
+      "type": "Self-Pickup",
+      "contact": {
+        "phone": "9876543210",
+        "email": "ss_seller_1@ss.com"
+      }
+    }
+  ],
+  "context": {
+    "domain": "ONDC:RET18",
+    "action": "on_search",
+    "country": "IND",
+    "city": "std:080",
+    "core_version": "1.2.0",
+    "bap_id": "ondc-buyer.digicraft.ai",
+    "bap_uri": "https://ondc-buyer.digicraft.ai/api/ondc",
+    "transaction_id": "f7c72697-21b3-45f1-bcd5-1534c03e6ddf",
+    "message_id": "4d500d65-9078-4e10-8770-88d9ec9f9dac",
+    "timestamp": "2025-04-21T21:07:00.874Z",
+    "bpp_id": "pramaan.ondc.org/beta/staging/mock/seller",
+    "bpp_uri": "https://pramaan.ondc.org/beta/staging/mock/seller"
+  },
+  "created_at": "2025-04-21T21:07:00.910Z"
+}

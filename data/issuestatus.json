@@ -1,0 +1,26 @@
+{
+    "context": {
+        "bpp_uri": "https://igm-mock-service.ondc.org/igm-protocol-server-preprod/ondc/",
+        "bpp_id": "igm-mock-service.ondc.org/igm-protocol-server-preprod",
+        "domain": "ONDC:RET10",
+        "action": "issue_status",
+        "core_version": "2.0.0",
+        "bap_id": "bap.example.com",
+        "bap_uri": "https://bap.example.com/beckn/",
+        "transaction_id": "TXN78910",
+        "message_id": "Msg20250221121211267b8ae5f16",
+        "timestamp": "2025-02-21T06:54:14.879Z",
+        "ttl": "PT10M",
+        "location": {
+            "country": {
+                "code": "IND"
+            },
+            "city": {
+                "code": "std:0172"
+            }
+        }
+    },
+    "message": {
+        "issue_id": "822025d1-b043-421b-bca3-b32256022aca"
+    }
+}

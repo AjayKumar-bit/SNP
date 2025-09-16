@@ -36,6 +36,8 @@ const updateRoutes = require("./routes/update");
 const statusRoutes = require("./routes/status");
 const ratingRoutes = require("./routes/rating");
 const supportRoutes = require("./routes/support");
+const orderRoutes = require("./routes/order");
+const issueRoutes = require("./routes/issue");
 
 // Use routes
 app.use("/search", searchRoutes);
@@ -48,6 +50,8 @@ app.use("/update", updateRoutes);
 app.use("/status", statusRoutes);
 app.use("/rating", ratingRoutes);
 app.use("/support", supportRoutes);
+app.use("/order", orderRoutes);
+app.use("/issue", issueRoutes);
 
 // Root route
 app.get("/", (req, res) => {

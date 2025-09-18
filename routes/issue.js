@@ -18,6 +18,23 @@ router.post("/issue", (req, res) => {
 	});
 });
 
+
+router.post("/issue-status", (req, res) => {
+	res.json({
+		message: {
+			ack: {
+				status: "ACK"
+			}
+		},
+		error: {
+			type: "CONTEXT-ERROR",
+			code: "string",
+			path: "string",
+			message: "string"
+		}
+	});
+});
+
 module.exports = router;
 
 // POST /status-proxy - Send issuestatus.json to http://localhost:8000/issue/decide
@@ -68,7 +85,19 @@ router.post("/mock-onissue", (req, res) => {
 		}
 		try {
 			const payload = JSON.parse(data);
-			res.json(payload);
+			res.json({
+                message: {
+                    ack: {
+                        status: "ACK"
+                    }
+                },
+                error: {
+                    type: "CONTEXT-ERROR",
+                    code: "string",
+                    path: "string",
+                    message: "string"
+                }
+            });
 		} catch (error) {
 			res.status(500).json({
 				success: false,
@@ -124,6 +153,38 @@ router.post("/onissue", async (req, res) => {
 			return res.status(500).json({
 				success: false,
 				message: "Failed to read onissue.json",
+				error: err.message
+			});
+		}
+		try {
+			const payload = JSON.parse(data);
+			const response = await fetch("http://localhost:8000/issue/decide", {
+				method: "POST",
+				headers: { "Content-Type": "application/json" },
+				body: JSON.stringify(payload)
+			});
+			const result = await response.json();
+			res.json(result);
+		} catch (error) {
+			res.status(500).json({
+				success: false,
+				message: "Failed to send data to /issue/decide",
+				error: error.message
+			});
+		}
+	});
+});
+
+
+
+
+router.post("/onissuestatus", async (req, res) => {
+	const filePath = path.join(__dirname, "../data/onissuestatus.json");
+	fs.readFile(filePath, "utf8", async (err, data) => {
+		if (err) {
+			return res.status(500).json({
+				success: false,
+				message: "Failed to read onissuestatus.json",
 				error: err.message
 			});
 		}

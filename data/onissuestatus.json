@@ -1,0 +1,173 @@
+{
+    "context": {
+        "bpp_uri": "https://igm-mock-service.ondc.org/igm-protocol-server-preprod/ondc/",
+        "bpp_id": "igm-mock-service.ondc.org/igm-protocol-server-preprod",
+        "domain": "ONDC:RET10",
+        "action": "on_issue_status",
+        "core_version": "2.0.0",
+        "bap_id": "bap.example.com",
+        "bap_uri": "https://bap.example.com/beckn/",
+        "transaction_id": "TXN78910",
+        "message_id": "Msg20250221121211267b8ae5f16",
+        "timestamp": "2025-02-21T06:54:14.879Z",
+        "ttl": "PT10M",
+        "location": {
+            "country": {
+                "code": "IND"
+            },
+            "city": {
+                "code": "std:0172"
+            }
+        }
+    },
+    "message": {
+        "issue": {
+            "id": "822025d1-b043-421b-bca3-b32256022aca",
+            "status": "PROCESSING",
+            "level": "GRIEVANCE",
+            "created_at": "2025-02-21T06:43:26.596Z",
+            "updated_at": "2025-02-21T06:43:26.596Z",
+            "source_id": "101101",
+            "complainant_id": "21022025-50",
+            "last_action_id": "I1",
+            "expected_response_time": {
+                "duration": "PT2H"
+            },
+            "expected_resolution_time": {
+                "duration": "PT2H"
+            },
+            "refs": [
+                {
+                    "ref_id": "ORDER202502211212112674a08a94e",
+                    "ref_type": "ORDER",
+                    "tags": []
+                },
+                {
+                    "ref_id": "01a9149b-1fa4-4175-8aec-1c0f25bd990d",
+                    "ref_type": "PROVIDER",
+                    "tags": []
+                },
+                {
+                    "ref_id": "52aeb16f-aaec-4aad-9178-8c5003ca9d77",
+                    "ref_type": "FULFILMENT",
+                    "tags": []
+                },
+                {
+                    "ref_id": "52aeb16f-aaec-4aad-9178-8c5003ca9d77",
+                    "ref_type": "ITEM",
+                    "tags": [
+                        {
+                            "descriptor": {
+                                "code": "message.order.items"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "quantity.selected.count"
+                                    },
+                                    "value": "1"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "actors": [
+                {
+                    "id": "CUST1",
+                    "type": "INTERFACING_NP",
+                    "info": {
+                        "org": {
+                            "name": "buyerapp.com::ONDC:RET10"
+                        },
+                        "person": {
+                            "name": "Sam Manuel"
+                        },
+                        "contact": {
+                            "phone": "9879879870",
+                            "email": "sam@yahoo.com"
+                        }
+                    }
+                },
+                {
+                    "id": "CUST2",
+                    "type": "COUNTERPARTY_NP",
+                    "info": {
+                        "org": {
+                            "name": "sellerapp.com::ONDC:RET10"
+                        },
+                        "person": {
+                            "name": "Sam Manuel"
+                        },
+                        "contact": {
+                            "phone": "9879879870",
+                            "email": "sam@yahoo.com"
+                        }
+                    }
+                }
+            ],
+            "respondent_ids": [
+                "NP2"
+            ],
+            "description": {
+                "code": "Wrong delivery address",
+                "short_desc": "short",
+                "long_desc": "long description",
+                "additional_desc": {
+                    "content_type": null,
+                    "url": "text/plain"
+                },
+                "images": [
+                    "https://dev.workerunionsupport.com/UploadedONDCIGM/101101_IMG_20250128_124731_202502211319.jpg"
+                ]
+            },
+            "actions": [
+                {
+                    "id": "50",
+                    "updated_at": "2025-02-21T06:43:26.596Z",
+                    "action_by": "dev.workerunionsupport.com/api/ondc",
+                    "descriptor": {
+                        "code": "OPEN",
+                        "name": null,
+                        "short_desc": "Complainant created"
+                    },
+                    "ref_id": null,
+                    "ref_type": null,
+                    "actor_details": {
+                        "name": "Div"
+                    }
+                },
+                {
+                    "id": "501",
+                    "updated_at": "2025-02-21T06:43:26.596Z",
+                    "action_by": "dev.workerunions.com/api/ondc",
+                    "descriptor": {
+                        "code": "PROCESSING",
+                        "name": null,
+                        "short_desc": "Need more info"
+                    },
+                    "ref_id": null,
+                    "ref_type": null,
+                    "actor_details": {
+                        "name": "Div"
+                    }
+                }
+            ],
+            "resolutions": [],
+            "order_id": "ORD123456",
+            "item_id": "item-001"
+        },
+        "update_target": [
+            {
+                "path": "issue.actions",
+                "actions": "APPENDED"
+            }
+        ]
+    },
+    "error": {
+        "type": null,
+        "code": null,
+        "path": null,
+        "message": null
+    }
+}

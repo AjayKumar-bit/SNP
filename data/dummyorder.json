@@ -1,135 +1,225 @@
-  {
-    "orderId": "ORD123456",
-    "orderState": "CONFIRMED",
-    "fullfillmentState": "FULFILLED",
-    "latestStatusTimestamp": "2025-09-16T10:00:00.000Z",
-    "transactionId": "TXN78910",
-    "bppId": "bpp.example.com",
-    "providerId": "provider-001",
-    "bapId": "bap.example.com",
-    "auditLogIds": {
-      "created": "log-001",
-      "updated": "log-002"
+{
+  "_id": {
+    "$oid": "68e35cc4fd73ad8e8657623b"
+  },
+  "orderId": "f5e769d315394cb2b654aabffbb7fdda",
+  "orderState": "CONFIRMED",
+  "fullfillmentState": "CONFIRMED",
+  "latestStatusTimestamp": {
+    "$date": "2025-10-06T06:08:04.541Z"
+  },
+  "transactionId": "3a201397-6c7b-4899-9235-5e60fd2ce6e6",
+  "bppId": "pramaan.ondc.org/beta/staging/mock/seller",
+  "providerId": "pramaan_provider_1",
+  "bapId": "ondc-buyer.digicraft.ai",
+  "context": {
+    "domain": "ONDC:RET10",
+    "action": "on_update",
+    "country": "IND",
+    "city": "std:080",
+    "core_version": "1.2.0",
+    "bap_id": "ondc-buyer.digicraft.ai",
+    "bap_uri": "https://ondc-buyer.digicraft.ai/api/ondc",
+    "transaction_id": "3a201397-6c7b-4899-9235-5e60fd2ce6e6",
+    "message_id": "f0e4fd19-0be4-4ca4-acf4-2657ce63a733",
+    "timestamp": "2025-10-06T06:15:14.209Z",
+    "ttl": "PT30S"
+  },
+  "order": {
+    "id": null,
+    "state": "Completed",
+    "payment": {
+      "type": "ON-ORDER",
+      "status": "PAID",
+      "transaction_id": "TXN123456789",
+      "amount": 145,
+      "currency": "INR"
     },
-    "context": {
-      "domain": "retail",
-      "action": "on_confirm",
-      "country": "IND",
-      "city": "std:080",
-      "core_version": "1.2.0",
-      "bap_id": "bap.example.com",
-      "bap_uri": "https://bap.example.com/beckn/",
-      "transaction_id": "TXN78910",
-      "message_id": "MSG12345",
-      "timestamp": "2025-09-16T10:00:00.000Z",
-      "ttl": "PT30M"
-    },
-    "tracking": {
-      "id": "track-001",
-      "url": "https://track.example.com/ORD123456",
-      "status": "active",
-      "location": {
-        "id": "loc-001",
-        "descriptor": {
-          "name": "Warehouse"
-        },
-        "gps": "12.9716,77.5946",
-        "address": {
-          "street": "MG Road",
-          "city": "Bangalore",
-          "state": "Karnataka",
-          "country": "India",
-          "area_code": "560001"
-        },
-        "city": {
-          "name": "Bangalore",
-          "code": "std:080"
-        },
-        "country": {
-          "name": "India",
-          "code": "IND"
-        }
-      },
-      "tags": [
-        {
-          "code": "priority",
-          "name": "Priority",
-          "value": "high",
-          "display": true
-        }
-      ]
-    },
-    "order": {
-      "id": "ORD123456",
-      "state": "CONFIRMED",
-      "provider": {
-        "id": "provider-001",
-        "descriptor": {
-          "name": "Provider Name"
-        }
-      },
-      "payment": {
-        "uri": "https://pay.example.com/ORD123456",
-        "tl_method": "http/post",
-        "params": {
-          "transaction_id": "TXN78910",
-          "transaction_status": "PAID",
-          "amount": "500.00",
-          "currency": "INR"
-        },
-        "type": "ON-ORDER",
-        "status": "PAID",
-        "collected_by": "BAP",
-        "@ondc/org/collected_by_status": "Agree",
-        "@ondc/org/buyer_app_finder_fee_type": "Percent",
-        "@ondc/org/buyer_app_finder_fee_amount": "2",
-        "@ondc/org/settlement_details": []
-      },
-      "fulfillments": [
-        {
-          "id": "ful-001",
-          "type": "Delivery",
-          "provider_id": "provider-001",
-          "state": "FULFILLED",
-          "tracking": true
-        }
-      ],
-      "items": [
-        {
-          "id": "item-001",
+    "fulfillment": {
+      "type": "Delivery",
+      "status": "PENDING",
+      "tracking": false,
+      "start": {
+        "location": {
+          "id": "SSL1",
           "descriptor": {
-            "name": "Pizza Margherita"
-          },
-          "quantity": 2,
-          "price": 250.00
+            "name": "Pramaan Store 1"
+          }
+        },
+        "time": {
+          "timestamp": "2025-10-06T06:15:19.824Z"
         }
-      ],
-      "billing": {
-        "name": "John Doe",
-        "address": "123 Main St, Bangalore",
-        "phone": "+911234567890",
-        "email": "john@example.com"
       },
-      "quote": {
-        "price": 500.00,
-        "currency": "INR"
+      "end": {
+        "location": {
+          "id": "",
+          "descriptor": {
+            "name": ""
+          }
+        },
+        "time": {
+          "timestamp": "2025-10-06T06:15:19.824Z"
+        }
       }
     },
-    "cancellation": {
-      "reason": {
-        "id": "cancel-001",
+    "items": [
+      {
+        "id": "id_13owvn_0_0",
+        "quantity": {
+          "count": 1
+        },
+        "price": {
+          "currency": "INR",
+          "value": "0"
+        },
+        "fulfillment_id": "ba529014-783e-43d9-a52b-16885e794ee4",
+        "category_id": "",
         "descriptor": {
-          "name": "Customer Request"
+          "name": "",
+          "code": ""
         }
       },
-      "cancelled_by": "user",
-      "cancelled_at": "2025-09-16T11:00:00.000Z"
+      {
+        "id": "id_13owvn_0_0",
+        "quantity": {
+          "count": 1
+        },
+        "price": {
+          "currency": "INR",
+          "value": "0"
+        },
+        "fulfillment_id": "2f5e60b2-90ab-4f1a-ba39-c3a7552d5773",
+        "category_id": "",
+        "descriptor": {
+          "name": "",
+          "code": ""
+        }
+      },
+      {
+        "id": "id_13owvn_0_0",
+        "quantity": {
+          "count": 1
+        },
+        "price": {
+          "currency": "INR",
+          "value": "0"
+        },
+        "fulfillment_id": "bdba61eb-f37b-46f8-8161-8b42c70661c7",
+        "category_id": "",
+        "descriptor": {
+          "name": "",
+          "code": ""
+        }
+      },
+      {
+        "id": "id_13owvn_0_0",
+        "quantity": {
+          "count": 1
+        },
+        "price": {
+          "currency": "INR",
+          "value": "0"
+        },
+        "fulfillment_id": "0fcba388-c3e4-4521-80a5-451e06a23942",
+        "category_id": "",
+        "descriptor": {
+          "name": "",
+          "code": ""
+        }
+      },
+      {
+        "id": "id_13owvn_0_0",
+        "quantity": {
+          "count": 1
+        },
+        "price": {
+          "currency": "INR",
+          "value": "0"
+        },
+        "fulfillment_id": "bdba61eb-f37b-46f8-8161-8b42c70661c7",
+        "category_id": "",
+        "descriptor": {
+          "name": "",
+          "code": ""
+        }
+      },
+      {
+        "id": "id_13owvn_0_0",
+        "quantity": {
+          "count": 1
+        },
+        "price": {
+          "currency": "INR",
+          "value": "0"
+        },
+        "fulfillment_id": "0fcba388-c3e4-4521-80a5-451e06a23942",
+        "category_id": "",
+        "descriptor": {
+          "name": "",
+          "code": ""
+        }
+      }
+    ],
+    "billing": {
+      "name": "Test User",
+      "email": "testuser@example.com",
+      "phone": "9999999999",
+      "address": {
+        "street": "",
+        "city": "Bangalore",
+        "state": "Karnataka",
+        "country": "IND",
+        "area_code": "560102"
+      }
     },
-    "rating": {
-      "value": 5,
-      "feedback": "Great service!",
-      "created_at": "2025-09-16T12:00:00.000Z"
+    "quote": {
+      "price": {
+        "currency": "INR",
+        "value": "0.00"
+      },
+      "breakup": [
+        {
+          "title": "Plain Atta",
+          "price": {
+            "currency": "INR",
+            "value": "0"
+          }
+        },
+        {
+          "title": "Delivery charges",
+          "price": {
+            "currency": "INR",
+            "value": "0"
+          }
+        },
+        {
+          "title": "Convenience Fee",
+          "price": {
+            "currency": "INR",
+            "value": "0"
+          }
+        }
+      ]
+    }
+  },
+  "version": 1.2,
+  "createdAt": {
+    "$date": "2025-10-06T06:08:04.543Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-06T06:15:19.825Z"
+  },
+  "__v": 0,
+  "cancellation": {
+    "reason": {
+      "id": "SYSTEM_CANCELLED",
+      "descriptor": {
+        "name": "System Cancelled Order"
+      }
     },
-    "version": 1.2
+    "cancelled_by": "ondc-buyer.digicraft.ai",
+    "cancelled_at": {
+      "$date": "2025-10-06T06:12:35.585Z"
+    }
   }
-
+}

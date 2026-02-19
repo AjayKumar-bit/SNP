@@ -18,11 +18,13 @@
             "city": {
                 "code": "std:0172"
             }
-        }
+        },
+        "country": "IND",
+        "city": "std:0172"
     },
     "message": {
         "issue": {
-            "id": "01d749a0-249d-4af7-bf6d-8dcf3bcbdeb4",
+            "id": "3806d20a-f6cc-41b6-b7a0-f1ffcfcc326b",
             "status": "PROCESSING",
             "level": "ISSUE",
             "created_at": "2025-02-21T06:43:26.596Z",
@@ -109,7 +111,7 @@
             "respondent_ids": [
                 "NP2"
             ],
-            "description": {
+            "descriptor": {
                 "code": "Wrong delivery address",
                 "short_desc": "short",
                 "long_desc": "long description",
@@ -118,7 +120,7 @@
                     "url": "text/plain"
                 },
                 "images": [
-                    "https://dev.workerunionsupport.com/UploadedONDCIGM/101101_IMG_20250128_124731_202502211319.jpg"
+                    {"url": "https://dev.workerunionsupport.com/UploadedONDCIGM/101101_IMG_20250128_124731_202502211319.jpg"}
                 ]
             },
             "actions": [
@@ -136,6 +138,19 @@
                     "actor_details": {
                         "name": "Div"
                     }
+                },
+                {
+                    "id": "id_1b21x3_2",
+                    "ref_id": "id_1ieneh_0",
+                    "ref_type": "RESOLUTIONS",
+                    "descriptor": {
+                        "code": "RESOLUTION_PROPOSED"
+                    },
+                    "updated_at": "2025-11-25T08:16:13.170Z",
+                    "action_by": "id_80cq5_0",
+                    "actor_details": {
+                        "name": "Jim Halpert"
+                    }
                 }
             ],
             "resolutions": [],
@@ -145,7 +160,7 @@
         "update_target": [
             {
                 "path": "issue.actions",
-                "actions": "APPENDED"
+                "action": "APPENDED"
             }
         ]
     },

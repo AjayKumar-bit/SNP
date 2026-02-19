@@ -18,16 +18,18 @@
             "city": {
                 "code": "std:0172"
             }
-        }
+        },
+        "country": "IND",
+        "city": "std:0172"
     },
     "message": {
         "issue": {
-            "id": "822025d1-b043-421b-bca3-b32256022aca",
+            "id": "803d5f23-9169-4899-a04d-9ab0a4fb4ffd",
             "status": "PROCESSING",
             "level": "GRIEVANCE",
             "created_at": "2025-02-21T06:43:26.596Z",
             "updated_at": "2025-02-21T06:43:26.596Z",
-            "source_id": "101101",
+            "source_id": "SRC004",
             "complainant_id": "21022025-50",
             "last_action_id": "I1",
             "expected_response_time": {
@@ -109,7 +111,7 @@
             "respondent_ids": [
                 "NP2"
             ],
-            "description": {
+            "descriptor": {
                 "code": "Wrong delivery address",
                 "short_desc": "short",
                 "long_desc": "long description",
@@ -118,25 +120,10 @@
                     "url": "text/plain"
                 },
                 "images": [
-                    "https://dev.workerunionsupport.com/UploadedONDCIGM/101101_IMG_20250128_124731_202502211319.jpg"
+                    {"url": "https://dev.workerunionsupport.com/UploadedONDCIGM/101101_IMG_20250128_124731_202502211319.jpg"}
                 ]
             },
             "actions": [
-                {
-                    "id": "50",
-                    "updated_at": "2025-02-21T06:43:26.596Z",
-                    "action_by": "dev.workerunionsupport.com/api/ondc",
-                    "descriptor": {
-                        "code": "OPEN",
-                        "name": null,
-                        "short_desc": "Complainant created"
-                    },
-                    "ref_id": null,
-                    "ref_type": null,
-                    "actor_details": {
-                        "name": "Div"
-                    }
-                },
                 {
                     "id": "501",
                     "updated_at": "2025-02-21T06:43:26.596Z",
@@ -160,7 +147,7 @@
         "update_target": [
             {
                 "path": "issue.actions",
-                "actions": "APPENDED"
+                "action": "APPENDED"
             }
         ]
     },

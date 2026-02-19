@@ -118,7 +118,7 @@ router.post("/", async (req, res) => {
     // After 5 seconds, call BAP on_status endpoint
     setTimeout(async () => {
       try {
-        const onStatusUrl = `${bap_uri}/on_status`;
+        const onStatusUrl = `http://localhost:9001/ondc/on_status`;
         console.log(`Calling BAP on_status endpoint: ${onStatusUrl}`);
 
         const response = await fetch(onStatusUrl, {

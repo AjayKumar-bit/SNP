@@ -40,7 +40,7 @@ router.post("/", async (req, res) => {
       });
     }
 
-    const bap_uri = context.bap_uri;
+    const bap_uri = "http://localhost:9001/ondc";
     console.log(`Received init request for BAP: ${bap_uri}`);
 
     // Return ACK response immediately

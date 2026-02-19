@@ -20,6 +20,7 @@ router.post("/issue", (req, res) => {
 
 
 router.post("/issue-status", (req, res) => {
+	// console.log(req.body.message.issue.actions)
 	res.json({
 		message: {
 			ack: {
@@ -36,39 +37,6 @@ router.post("/issue-status", (req, res) => {
 });
 
 module.exports = router;
-
-// POST /status-proxy - Send issuestatus.json to http://localhost:8000/issue/decide
-router.post("/status-proxy", async (req, res) => {
-	const path = require("path");
-	const fs = require("fs");
-	const fetch = require("node-fetch");
-	const filePath = path.join(__dirname, "../data/issuestatus.json");
-	fs.readFile(filePath, "utf8", async (err, data) => {
-		if (err) {
-			return res.status(500).json({
-				success: false,
-				message: "Failed to read issuestatus.json",
-				error: err.message
-			});
-		}
-		try {
-			const payload = JSON.parse(data);
-			const response = await fetch("http://localhost:8000/issue/decide", {
-				method: "POST",
-				headers: { "Content-Type": "application/json" },
-				body: JSON.stringify(payload)
-			});
-			const result = await response.json();
-			res.json(result);
-		} catch (error) {
-			res.status(500).json({
-				success: false,
-				message: "Failed to send data to /issue/decide",
-				error: error.message
-			});
-		}
-	});
-});
 
 // POST /mock-onissue - Respond with onissue.json data
 router.post("/mock-onissue", (req, res) => {
@@ -108,6 +76,38 @@ router.post("/mock-onissue", (req, res) => {
 	});
 });
 
+router.post("/status-proxy", async (req, res) => {
+	const path = require("path");
+	const fs = require("fs");
+	const fetch = require("node-fetch");
+	const filePath = path.join(__dirname, "../data/issuestatus.json");
+	fs.readFile(filePath, "utf8", async (err, data) => {
+		if (err) {
+			return res.status(500).json({
+				success: false,
+				message: "Failed to read issuestatus.json",
+				error: err.message
+			});
+		}
+		try {
+			const payload = JSON.parse(data);
+			const response = await fetch("http://localhost:8000/issue/decide", {
+				method: "POST",
+				headers: { "Content-Type": "application/json" },
+				body: JSON.stringify(payload)
+			});
+			const result = await response.json();
+			res.json(result);
+		} catch (error) {
+			res.status(500).json({
+				success: false,
+				message: "Failed to send data to /issue/decide",
+				error: error.message
+			});
+		}
+	});
+});
+
 // POST /decide-proxy - Proxy request body to http://localhost:8000/issue/decide
 router.post("/decide-proxy", async (req, res) => {
 	const path = require("path");
@@ -124,7 +124,7 @@ router.post("/decide-proxy", async (req, res) => {
 		}
 		try {
 			const payload = JSON.parse(data);
-			const response = await fetch("http://localhost:8000/issue/decide", {
+			const response = await fetch("http://localhost:3000/issue/decide", {
 				method: "POST",
 				headers: { "Content-Type": "application/json" },
 				body: JSON.stringify(payload)
@@ -196,7 +196,11 @@ router.post("/onissuestatus", async (req, res) => {
 				body: JSON.stringify(payload)
 			});
 			const result = await response.json();
-			res.json(result);
+			console.log(result)
+			res.status(response.status).json({
+				statusCode: response.status,
+                body: result
+            });
 		} catch (error) {
 			res.status(500).json({
 				success: false,
